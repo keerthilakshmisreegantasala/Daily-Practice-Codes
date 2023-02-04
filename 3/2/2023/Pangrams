@@ -1,0 +1,21 @@
+ public static String pangrams(String str) {
+     str = str.replace(" ", "");
+     str = str.toLowerCase();
+    char[] chars = str.toCharArray();
+    Set<Character> charset = new HashSet<>();
+        for(char c: chars){
+        charset.add(c);
+    }
+        if(charset.size()== 26){
+            return "pangram";
+        }
+        else{
+            return "not pangram";
+        }
+
+    }
+
+
+    
+
+}
